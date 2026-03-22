@@ -1,0 +1,472 @@
+/* Certifications.module.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+  min-height: 100vh;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #6366f1;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.gradientText {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec489a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.statsSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.statCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.statCard:hover {
+  border-color: #6366f1;
+  transform: translateY(-5px);
+}
+
+.statIcon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.statValue {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.statLabel {
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+}
+
+.section {
+  margin-bottom: 5rem;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionBadge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #6366f1;
+  margin-bottom: 1rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.certGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.certCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.certCard:hover {
+  border-color: #6366f1;
+  transform: translateY(-3px);
+}
+
+.certIcon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.certInfo {
+  flex: 1;
+}
+
+.certInfo h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.certIssuer {
+  font-size: 0.85rem;
+  color: #6366f1;
+  margin-bottom: 0.75rem;
+}
+
+.certMeta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+}
+
+.certMeta span {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.certLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #6366f1;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: gap 0.3s ease;
+}
+
+.certLink:hover {
+  gap: 0.75rem;
+}
+
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.categoryCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.categoryCard:hover {
+  border-color: #6366f1;
+  transform: translateY(-5px);
+}
+
+.categoryIcon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.categoryCard h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.categoryCerts {
+  text-align: left;
+}
+
+.categoryCert {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.categoryCert:last-child {
+  border-bottom: none;
+}
+
+.categoryCert svg {
+  color: #10b981;
+  flex-shrink: 0;
+}
+
+.skillsBadges {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 30px;
+  padding: 2rem;
+}
+
+.badgeGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.badgeItem {
+  padding: 0.6rem 1.2rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.05));
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.badgeItem:hover {
+  border-color: #6366f1;
+  transform: translateY(-2px);
+}
+
+.ctaSection {
+  margin-top: 4rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.05));
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 40px;
+  padding: 3rem;
+  text-align: center;
+}
+
+.ctaIcon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 1rem;
+  color: #6366f1;
+}
+
+.ctaSection h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.ctaSection p {
+  color: var(--text-secondary);
+  max-width: 500px;
+  margin: 0 auto 2rem;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.8rem;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+}
+
+@media (max-width: 968px) {
+  .certGrid,
+  .categoriesGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .statsSection {
+    grid-template-columns: 1fr;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 4rem 1rem;
+  }
+  
+  .certCard {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .certIcon {
+    margin: 0 auto;
+  }
+  
+  .certMeta {
+    justify-content: center;
+  }
+  
+  .ctaSection h2 {
+    font-size: 1.5rem;
+  }
+}
+/* Add these styles to the end of Certifications.module.css */
+
+.categoryCertMore {
+  padding: 0.5rem 0;
+  font-size: 0.75rem;
+  color: #6366f1;
+  font-style: italic;
+  text-align: center;
+  border-top: 1px solid var(--border-light);
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 968px) {
+  .categoriesGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .certCard {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .certIcon {
+    margin: 0 auto;
+  }
+  
+  .certMeta {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .categoryCertMore {
+    font-size: 0.7rem;
+  }
+}
+/* Add these styles to the end of Certifications.module.css */
+
+.certLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #6366f1;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.certLink:hover {
+  gap: 0.75rem;
+  color: #8b5cf6;
+}
+
+.categoryCertMore {
+  padding: 0.5rem 0;
+  font-size: 0.75rem;
+  color: #6366f1;
+  font-style: italic;
+  text-align: center;
+  border-top: 1px solid var(--border-light);
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 968px) {
+  .categoriesGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .certCard {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .certIcon {
+    margin: 0 auto;
+  }
+  
+  .certMeta {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .categoryCertMore {
+    font-size: 0.7rem;
+  }
+  
+  .certLink {
+    justify-content: center;
+  }
+}

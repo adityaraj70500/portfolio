@@ -1,0 +1,433 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.headerIcon {
+  width: 4rem;
+  height: 4rem;
+  color: #10b981;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #10b981, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.statsSection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.statCard {
+  background: var(--bg-primary);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-5px);
+  border-color: #10b981;
+}
+
+.statValue {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #10b981, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.statLabel {
+  color: var(--text-tertiary);
+  font-size: 0.9rem;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.sectionIcon {
+  width: 2rem;
+  height: 2rem;
+  color: #10b981;
+}
+
+.papersGrid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.paperCard {
+  background: var(--bg-primary);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.paperCard:hover {
+  border-color: #10b981;
+  box-shadow: var(--shadow-lg);
+}
+
+.paperHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.paperIcon {
+  font-size: 2rem;
+}
+
+.paperTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.paperConference {
+  font-size: 0.85rem;
+  color: #10b981;
+}
+
+.paperAbstract {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.paperMeta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-tertiary);
+  font-size: 0.85rem;
+}
+
+.paperLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #10b981;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: gap 0.3s ease;
+}
+
+.paperLink:hover {
+  gap: 0.75rem;
+}
+
+.interestsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.interestCard {
+  background: var(--bg-primary);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.interestCard:hover {
+  border-color: #10b981;
+  transform: translateY(-5px);
+}
+
+.interestIcon {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto 1rem;
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #10b981;
+}
+
+.interestIcon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.interestCard h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.interestCard p {
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+  line-height: 1.5;
+}
+
+.citationsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.citationItem {
+  background: var(--bg-primary);
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+}
+
+.citationPaper {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.citationStats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.citationCount {
+  color: #10b981;
+  font-weight: 500;
+}
+
+.citationYear {
+  color: var(--text-tertiary);
+}
+
+.citationBar {
+  width: 100%;
+  height: 0.5rem;
+  background: var(--border-color);
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.citationBarFill {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981, #8b5cf6);
+  border-radius: 100px;
+  transition: width 0.5s ease;
+}
+
+.collaborationsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.collabCard {
+  background: var(--bg-primary);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.collabCard:hover {
+  border-color: #10b981;
+  transform: translateX(10px);
+}
+
+.collabAvatar {
+  width: 3rem;
+  height: 3rem;
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.collabCard h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.collabCard p {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.collabRole {
+  font-size: 0.7rem;
+  color: #10b981;
+}
+
+.ctaSection {
+  background: linear-gradient(135deg, #10b981, #8b5cf6);
+  border-radius: 2rem;
+  padding: 4rem 2rem;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.ctaSection::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.ctaContent {
+  position: relative;
+  z-index: 1;
+}
+
+.ctaIcon {
+  width: 3rem;
+  height: 3rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.ctaContent h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.ctaContent p {
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 2rem;
+  background: white;
+  color: #10b981;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1024px) {
+  .statsSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .interestsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .collaborationsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 4rem 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .statsSection {
+    grid-template-columns: 1fr;
+  }
+
+  .interestsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .ctaContent h2 {
+    font-size: 1.5rem;
+  }
+}
